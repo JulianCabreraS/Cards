@@ -12,7 +12,9 @@ func main() {
 	remainingCards.print()
 
 	cards.saveToFile("my_cards")
-	cards2 := newDeckFromFile("my_cards2")
+
+	cards2 := newDeckFromFile("my_cards")
+	cards2.shuffle()
 	cards2.print()
 }
 
